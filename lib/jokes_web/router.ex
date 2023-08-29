@@ -18,6 +18,8 @@ defmodule JokesWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    get "/joke", JokeController, :index
   end
 
   # Other scopes may use custom stacks.

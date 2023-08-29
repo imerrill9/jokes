@@ -1,23 +1,7 @@
 <.header>
-  Listing Jokes
-  <:actions>
-    <.link href={~p"/jokes/new"}>
-      <.button>New Joke</.button>
-    </.link>
-  </:actions>
+  Random Dad joke to brighten your day!
 </.header>
 
-<.table id="jokes" rows={@jokes} row_click={&JS.navigate(~p"/jokes/#{&1}")}>
-  <:col :let={joke} label="Response"><%= joke.response %></:col>
-  <:action :let={joke}>
-    <div class="sr-only">
-      <.link navigate={~p"/jokes/#{joke}"}>Show</.link>
-    </div>
-    <.link navigate={~p"/jokes/#{joke}/edit"}>Edit</.link>
-  </:action>
-  <:action :let={joke}>
-    <.link href={~p"/jokes/#{joke}"} method="delete" data-confirm="Are you sure?">
-      Delete
-    </.link>
-  </:action>
-</.table>
+<div class="centered-text">
+  <%= @joke %>
+</div>
