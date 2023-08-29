@@ -1,5 +1,12 @@
 # Jokes
 
+Jokes is a quick project to refresh myself on the Elixir Phoenix web framework.
+The home page lets a user generate random horrible jokes for all to enjoy!
+
+The main page shows a Live View Phoenix front end and `/jokes` is a route for a normal html page.
+
+## Phoenix info
+
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
