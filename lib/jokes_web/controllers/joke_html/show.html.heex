@@ -1,0 +1,15 @@
+<.header>
+  Joke <%= @joke.id %>
+  <:subtitle>This is a joke record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/jokes/#{@joke}/edit"}>
+      <.button>Edit joke</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Response"><%= @joke.response %></:item>
+</.list>
+
+<.back navigate={~p"/jokes"}>Back to jokes</.back>

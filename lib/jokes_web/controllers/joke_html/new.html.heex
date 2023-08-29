@@ -1,0 +1,8 @@
+<.header>
+  New Joke
+  <:subtitle>Use this form to manage joke records in your database.</:subtitle>
+</.header>
+
+<.joke_form changeset={@changeset} action={~p"/jokes"} />
+
+<.back navigate={~p"/jokes"}>Back to jokes</.back>
