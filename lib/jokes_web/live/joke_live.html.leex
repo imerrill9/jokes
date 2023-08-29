@@ -1,0 +1,11 @@
+<!-- lib/your_project_web/live/joke_live.html.leex -->
+
+<div class="joke-container">
+  <h1 class="joke-header">How 'bout a nice dad joke to brighten your day?</h1>
+  <div class="centered-text">
+    <%= @joke %>
+  </div>
+  <div class="refresh-button">
+    <button phx-click="fetch_joke">New Joke!</button>
+  </div>
+</div>

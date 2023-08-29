@@ -3,8 +3,37 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
-.centered-text {
+
+.joke-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
     text-align: center;
-    margin: auto;
-    max-width: 80%; /* Adjust as needed */
+  }
+
+  .joke-header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .centered-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .refresh-button button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .refresh-button button:hover {
+    background-color: #2980b9;
   }

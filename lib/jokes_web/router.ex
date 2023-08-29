@@ -17,7 +17,7 @@ defmodule JokesWeb.Router do
   scope "/", JokesWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", JokeLive
 
     get "/joke", JokeController, :index
   end
